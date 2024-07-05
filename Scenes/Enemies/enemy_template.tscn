@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://Scenes/Enemies/enemy.gd" id="1_28wdy"]
 
 [node name="EnemyTemplate" type="CharacterBody2D" groups=["enemy"]]
+motion_mode = 1
 script = ExtResource("1_28wdy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
