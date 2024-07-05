@@ -13,3 +13,8 @@ config_version=5
 config/name="Otter Survivor"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_3="Environment"
