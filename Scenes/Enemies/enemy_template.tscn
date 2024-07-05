@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://d03773ks4j1kc"]
+
+[ext_resource type="Script" path="res://Scenes/Enemies/enemy.gd" id="1_28wdy"]
+[ext_resource type="Texture2D" uid="uid://cabmrhv3px162" path="res://Assets/Characters/Duck.png" id="2_8hmjc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yspsn"]
+radius = 5.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qscc5"]
+radius = 9.05539
+
+[node name="EnemyTemplate" type="CharacterBody2D" groups=["enemy"]]
+script = ExtResource("1_28wdy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yspsn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8hmjc")
+
+[node name="AttackArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+shape = SubResource("CircleShape2D_qscc5")
