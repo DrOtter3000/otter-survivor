@@ -2,6 +2,8 @@ extends CharacterBody2D
 class_name Enemy
 
 @export var speed := 100
+@export var hitpoints := 20
+
 
 var player: CharacterBody2D
 
