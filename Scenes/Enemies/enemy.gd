@@ -21,5 +21,7 @@ func _physics_process(delta: float) -> void:
 	
 	if velocity != Vector2.ZERO:
 		$AnimationPlayer.play("walk")
+	else:
+		$AnimationPlayer.stop()
 
 	move_and_slide()
