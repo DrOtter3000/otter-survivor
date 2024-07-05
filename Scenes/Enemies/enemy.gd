@@ -12,10 +12,14 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	var direction := player.global_position - position
+	velocity = direction.normalized() * speed
+	
 	if direction.x < 0:
 		$Sprite2D.flip_h = false
 	elif direction.x > 0:
 		$Sprite2D.flip_h = true
-	velocity = direction.normalized() * speed
 	
+	if velocity != Vector2.ZERO:
+		$AnimationPlayer.play("walk")
+
 	move_and_slide()
