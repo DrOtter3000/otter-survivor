@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bnv3s6y77mfpc"]
+[gd_scene load_steps=6 format=3 uid="uid://bnv3s6y77mfpc"]
 
 [ext_resource type="Texture2D" uid="uid://ccpdoffyq8bka" path="res://Assets/Tilemap/Tilemap.png" id="1_gf12f"]
 [ext_resource type="PackedScene" uid="uid://c31ibjncoquyd" path="res://Scenes/Player/player.tscn" id="2_kshsb"]
+[ext_resource type="PackedScene" uid="uid://dafuoq741x8c6" path="res://Scenes/Enemies/duck.tscn" id="3_64umn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m0yik"]
 resource_name = "World"
@@ -218,3 +219,6 @@ layer_0/tile_data = PackedInt32Array(2293807, 0, 1, 2228271, 0, 1, 2162735, 0, 1
 
 [node name="Player" parent="Level" instance=ExtResource("2_kshsb")]
 position = Vector2(714, 433)
+
+[node name="Duck" parent="Level" instance=ExtResource("3_64umn")]
+position = Vector2(96, 96)

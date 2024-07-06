@@ -33,6 +33,9 @@ func take_damage(value):
 	hitpoints -= value
 	if hitpoints <= 0:
 		die()
+	$Sprite2D.modulate = Color.RED
+	await get_tree().create_timer(.1).timeout
+	$Sprite2D.modulate = Color.WHITE
 
 
 func die():

@@ -1,9 +1,9 @@
 extends Node
 
 
-@export var damage := 10
-@export var base_attack_intervall_time := 3.0
-@export var attack_range := 200
+@export var damage := 5
+@export var base_attack_intervall_time := 2
+@export var attack_range := 250
 @export var scratch_attack_scene: PackedScene
 
 @onready var timer: Timer = $Timer
