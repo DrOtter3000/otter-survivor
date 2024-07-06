@@ -1,10 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bnv3s6y77mfpc"]
+[gd_scene load_steps=5 format=3 uid="uid://bnv3s6y77mfpc"]
 
 [ext_resource type="Texture2D" uid="uid://ccpdoffyq8bka" path="res://Assets/Tilemap/Tilemap.png" id="1_gf12f"]
 [ext_resource type="PackedScene" uid="uid://c31ibjncoquyd" path="res://Scenes/Player/player.tscn" id="2_kshsb"]
-[ext_resource type="PackedScene" uid="uid://b1rr63qev1mes" path="res://Scenes/Enemies/crab.tscn" id="3_3s7km"]
-[ext_resource type="PackedScene" uid="uid://dafuoq741x8c6" path="res://Scenes/Enemies/duck.tscn" id="3_64umn"]
-[ext_resource type="PackedScene" uid="uid://b7opggqiv1se" path="res://Scenes/Enemies/crocodile.tscn" id="4_o3jvx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m0yik"]
 resource_name = "World"
@@ -219,27 +216,3 @@ layer_0/tile_data = PackedInt32Array(2293807, 0, 1, 2228271, 0, 1, 2162735, 0, 1
 
 [node name="Player" parent="." instance=ExtResource("2_kshsb")]
 position = Vector2(714, 433)
-
-[node name="Duck" parent="." instance=ExtResource("3_64umn")]
-position = Vector2(153, 413)
-
-[node name="Duck2" parent="." instance=ExtResource("3_64umn")]
-position = Vector2(201, 411)
-
-[node name="Duck3" parent="." instance=ExtResource("3_64umn")]
-position = Vector2(207, 365)
-
-[node name="Crocodile" parent="." instance=ExtResource("4_o3jvx")]
-position = Vector2(31, 17)
-
-[node name="Crocodile2" parent="." instance=ExtResource("4_o3jvx")]
-position = Vector2(31, 413)
-
-[node name="Crab" parent="." instance=ExtResource("3_3s7km")]
-position = Vector2(132, 74)
-
-[node name="Crab2" parent="." instance=ExtResource("3_3s7km")]
-position = Vector2(43, 87)
-
-[node name="Crab3" parent="." instance=ExtResource("3_3s7km")]
-position = Vector2(31, 17)
