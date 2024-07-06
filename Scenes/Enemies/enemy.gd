@@ -31,4 +31,9 @@ func _physics_process(delta: float) -> void:
 
 func take_damage(value):
 	hitpoints -= value
-	print(hitpoints)
+	if hitpoints <= 0:
+		die()
+
+
+func die():
+	queue_free()
