@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c31ibjncoquyd"]
+[gd_scene load_steps=8 format=3 uid="uid://c31ibjncoquyd"]
 
 [ext_resource type="Texture2D" uid="uid://cmssee7obiot0" path="res://Assets/Characters/Otter.png" id="1_akqkr"]
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_orp1k"]
+[ext_resource type="PackedScene" uid="uid://dylym45we6uu0" path="res://Manager/Attacks/scratch_attack_manager.tscn" id="2_brwdx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4aqk6"]
 radius = 4.0
@@ -74,6 +75,8 @@ _data = {
 collision_mask = 4
 motion_mode = 1
 script = ExtResource("1_orp1k")
+
+[node name="ScratchAttackManager" parent="." instance=ExtResource("2_brwdx")]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -7)

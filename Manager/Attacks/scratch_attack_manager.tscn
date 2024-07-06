@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dylym45we6uu0"]
+
+[ext_resource type="Script" path="res://Manager/Attacks/scratch_attack_manager.gd" id="1_ymlx1"]
+[ext_resource type="PackedScene" uid="uid://camdcmw3n6jse" path="res://Scenes/Attacks/scratch_attack.tscn" id="2_72dpc"]
+
+[node name="ScratchAttackManager" type="Node"]
+script = ExtResource("1_ymlx1")
+scratch_attack_scene = ExtResource("2_72dpc")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

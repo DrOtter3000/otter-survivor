@@ -27,3 +27,8 @@ func _physics_process(delta: float) -> void:
 		$AnimationPlayer.stop()
 
 	move_and_slide()
+
+
+func take_damage(value):
+	hitpoints -= value
+	print(hitpoints)
