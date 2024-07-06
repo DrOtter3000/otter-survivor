@@ -221,4 +221,3 @@ layer_0/tile_data = PackedInt32Array(2293807, 0, 1, 2228271, 0, 1, 2162735, 0, 1
 position = Vector2(714, 433)
 
 [node name="Duck" parent="Level" instance=ExtResource("3_64umn")]
-position = Vector2(96, 96)

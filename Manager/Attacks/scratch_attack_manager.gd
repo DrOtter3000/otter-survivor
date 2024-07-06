@@ -10,11 +10,11 @@ extends Node
 
 
 func _ready() -> void:
-	$Timer.wait_time = base_attack_intervall_time
-	$Timer.start()
+	timer.wait_time = base_attack_intervall_time
 
 
 func _on_timer_timeout() -> void:
+	timer.start()
 	var player = get_tree().get_first_node_in_group("player") as Node2D
 	if player == null:
 		return
@@ -39,4 +39,3 @@ func _on_timer_timeout() -> void:
 	scratch_instance.global_position = enemies[0].global_position
 	scratch_instance.damage = damage
 	
-	$Timer.start()
