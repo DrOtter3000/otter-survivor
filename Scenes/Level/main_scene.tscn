@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bnv3s6y77mfpc"]
+[gd_scene load_steps=11 format=3 uid="uid://bnv3s6y77mfpc"]
 
 [ext_resource type="PackedScene" uid="uid://cowkouyhwxuiq" path="res://Manager/time_manager.tscn" id="1_2bcs1"]
 [ext_resource type="PackedScene" uid="uid://dqny23bs4ilkt" path="res://Manager/Enemies/enemy_spawn_manager.tscn" id="1_eag22"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dafuoq741x8c6" path="res://Scenes/Enemies/duck.tscn" id="2_wbo1x"]
 [ext_resource type="PackedScene" uid="uid://b1rr63qev1mes" path="res://Scenes/Enemies/crab.tscn" id="3_a2omx"]
 [ext_resource type="PackedScene" uid="uid://b7opggqiv1se" path="res://Scenes/Enemies/crocodile.tscn" id="4_nr26d"]
+[ext_resource type="PackedScene" uid="uid://b8yt5xxb0ej7u" path="res://Manager/Attacks/upgrade_manager.tscn" id="6_whoax"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m0yik"]
 resource_name = "World"
@@ -221,6 +222,8 @@ wait_time = 90
 duck_enemy_scene = ExtResource("2_wbo1x")
 crab_enemy_scene = ExtResource("3_a2omx")
 croc_enemy_scene = ExtResource("4_nr26d")
+
+[node name="UpgradeManager" parent="." instance=ExtResource("6_whoax")]
 
 [node name="Level" type="Node2D" parent="."]
 
