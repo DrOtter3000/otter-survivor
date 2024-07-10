@@ -1,0 +1,26 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://b5ncshcbl7ht6"]
+
+[ext_resource type="FontFile" uid="uid://ct0mk4b720q1" path="res://UI/Fonts/TMT-Paint-Regular.otf" id="1_cmnkm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vtmvm"]
+bg_color = Color(0.47451, 0.254902, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7aal4"]
+bg_color = Color(0.47451, 0.254902, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bxoad"]
+bg_color = Color(0.47451, 0.254902, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nakmv"]
+bg_color = Color(0.47451, 0.254902, 0, 1)
+
+[resource]
+default_font = ExtResource("1_cmnkm")
+default_font_size = 20
+Button/colors/font_color = Color(1, 0.635294, 0, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/styles/focus = SubResource("StyleBoxFlat_vtmvm")
+Button/styles/hover = SubResource("StyleBoxFlat_7aal4")
+Button/styles/normal = SubResource("StyleBoxFlat_bxoad")
+Button/styles/pressed = SubResource("StyleBoxFlat_nakmv")
+Label/colors/font_color = Color(1, 1, 1, 1)
