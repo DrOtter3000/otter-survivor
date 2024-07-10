@@ -1,8 +1,10 @@
 extends CharacterBody2D
 class_name Enemy
 
+@export var clam_instance: PackedScene
 @export var speed := 100
 @export var hitpoints := 20
+@export_range(0.05, 1) var drop_chance := .25
 
 
 var player: CharacterBody2D
@@ -39,4 +41,11 @@ func take_damage(value):
 
 
 func die():
+	call_deferred("spawn_item")
 	queue_free()
+
+
+func spawn_item():
+	var clam = clam_instance.instantiate()
+	get_parent().add_child(clam)
+	clam.global_position = global_position
