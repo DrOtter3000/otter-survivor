@@ -215,6 +215,7 @@ sources/0 = SubResource("TileSetAtlasSource_m0yik")
 [node name="MainScene" type="Node"]
 
 [node name="TimeManager" parent="." instance=ExtResource("1_2bcs1")]
+wait_time = 90
 
 [node name="EnemySpawnManager" parent="." instance=ExtResource("1_eag22")]
 duck_enemy_scene = ExtResource("2_wbo1x")

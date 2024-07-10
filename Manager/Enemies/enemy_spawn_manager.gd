@@ -29,6 +29,13 @@ func get_spawn_position() -> Vector2:
 		return spawn_position
 
 
+func expand_enemy_table(value):
+	if value == 4:
+		enemy_table.add_item(crab_enemy_scene, 20)
+	elif value == 8:
+		enemy_table.add_item(croc_enemy_scene, 30)
+
+
 func _on_timer_timeout() -> void:
 		timer.start()
 
