@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://b5ncshcbl7ht6"]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://b5ncshcbl7ht6"]
 
 [ext_resource type="FontFile" uid="uid://ct0mk4b720q1" path="res://UI/Fonts/TMT-Paint-Regular.otf" id="1_cmnkm"]
 
@@ -14,6 +14,12 @@ bg_color = Color(0.47451, 0.254902, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nakmv"]
 bg_color = Color(0.47451, 0.254902, 0, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bdb1t"]
+bg_color = Color(0.890196, 0.698039, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rsuj0"]
+bg_color = Color(0.952941, 0.380392, 1, 1)
+
 [resource]
 default_font = ExtResource("1_cmnkm")
 default_font_size = 20
@@ -24,3 +30,5 @@ Button/styles/hover = SubResource("StyleBoxFlat_7aal4")
 Button/styles/normal = SubResource("StyleBoxFlat_bxoad")
 Button/styles/pressed = SubResource("StyleBoxFlat_nakmv")
 Label/colors/font_color = Color(1, 1, 1, 1)
+ProgressBar/styles/background = SubResource("StyleBoxFlat_bdb1t")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_rsuj0")
